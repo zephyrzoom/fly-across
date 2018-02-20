@@ -1,16 +1,8 @@
-int main()
-{
-    Logger::Init("logging.xml");
-    g_pApp->m_Options.Init("PlayerOptions.xml");
-
-    if (!g_pApp->InitInstance(g_pApp->m_Options.m_ScreenSize.x, g_pApp->m_Options.m_ScreenSize.y))
-    {
-        return false;
+#include "game.h"
+Game* Game::game = nullptr;
+Game* Game::getGame() {
+    if (game == nullptr) {
+        game = new Game();
     }
-
-    MainLoop();
-    Shutdown();
-    Logger::Destroy();
-
-    return g_pApp->GetExitCode();
+    return game;
 }
