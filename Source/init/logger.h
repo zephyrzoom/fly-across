@@ -1,8 +1,8 @@
 #pragma
 #include <string>
-using std::string;
+
 class Logger
 {
 public:
-    static void init(const string logFile);
+    static void init(const std::string logFile);
 };

@@ -6,3 +6,7 @@ Game* Game::getGame() {
     }
     return game;
 }
+
+GameOption Game::getOptions() {
+    return options;
+}

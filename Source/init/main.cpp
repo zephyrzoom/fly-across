@@ -4,9 +4,9 @@ int main()
 {
     Logger::init("logging.json");
     
-    Game::getGame()->m_Options.Init("PlayerOptions.xml");
+    Game::getGame()->getOptions().init("PlayerOptions.xml");
 
-    if (!g_pApp->InitInstance(g_pApp->m_Options.m_ScreenSize.x, g_pApp->m_Options.m_ScreenSize.y))
+    if (!Game::getGame()->InitInstance(Game::getGame()->m_Options.m_ScreenSize.x, Game::getGame()->m_Options.m_ScreenSize.y))
     {
         return false;
     }
@@ -15,5 +15,5 @@ int main()
     Shutdown();
     Logger::Destroy();
 
-    return g_pApp->GetExitCode();
+    return Game::getGame()->GetExitCode();
 }
