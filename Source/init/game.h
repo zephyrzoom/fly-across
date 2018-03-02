@@ -6,7 +6,7 @@ private:
     static Game* game;
     GameOption options;
 public:
-    Game* getGame();
+    static Game* getGame();
     GameOption getOptions();
 
 protected:
