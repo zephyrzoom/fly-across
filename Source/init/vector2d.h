@@ -9,4 +9,5 @@ public:
     void setX(int x);
     void setY(int y);
     Vector2D(int x, int y);
+    Vector2D();
 };

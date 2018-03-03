@@ -4,10 +4,10 @@ class Game
 {
 private:
     static Game* game;
-    GameOption options;
+    GameOption m_gameOption;
 public:
     static Game* getGame();
-    GameOption getOptions();
+    void setOptions(GameOption gameOption);
 
 protected:
     Game();

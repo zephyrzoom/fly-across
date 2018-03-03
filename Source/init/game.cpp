@@ -7,6 +7,6 @@ Game* Game::getGame() {
     return game;
 }
 
-GameOption Game::getOptions() {
-    return options;
+void Game::setOptions(GameOption gameOption) {
+    m_gameOption = gameOption;
 }
