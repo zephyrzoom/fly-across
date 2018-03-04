@@ -1,12 +1,14 @@
 #include "logger.h"
 #include "game.h"
+#include "gameoption.h"
+
 int main()
 {
     Logger::init("logging.json");
-    
-    Game::getGame()->setOptions(new GameOption("PlayerOptions.xml"));
 
-    if (!Game::getGame()->InitInstance(Game::getGame()->m_Options.m_ScreenSize.x, Game::getGame()->m_Options.m_ScreenSize.y))
+    Game::getGame()->setOption(new GameOption("PlayerOption.xml"));
+
+    if (!Game::getGame()->init())
     {
         return false;
     }

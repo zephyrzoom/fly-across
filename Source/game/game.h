@@ -1,4 +1,4 @@
-#pragma
+#pragma once
 #include "gameoption.h"
 class Game 
 {
@@ -7,7 +7,8 @@ private:
     GameOption m_gameOption;
 public:
     static Game* getGame();
-    void setOptions(GameOption gameOption);
+    void setOption(GameOption gameOption);
+    bool init();
 
 protected:
     Game();

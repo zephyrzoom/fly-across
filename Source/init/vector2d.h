@@ -1,4 +1,4 @@
-#pragma
+#pragma once
 class Vector2D {
 private:
     int m_x;
