@@ -39,7 +39,8 @@
                 "${workspaceRoot}/Source/init",
                 "/usr/include/c++/5",
                 "/usr/include/x86_64-linux-gnu/c++/5",
-                "/usr/include/linux"
+                "/usr/include/linux",
+                "${workspaceRoot}/Source/init"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",

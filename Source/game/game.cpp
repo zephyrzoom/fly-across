@@ -31,5 +31,15 @@ bool Game::init() {
         return false;
     }
 
+    m_resCache = new ResCache();
+
+    if (!Initializer::loadResCache("Assets.zip", m_resCache)) {
+        return false;
+    }
+
+    if (!Initializer::loadString("Chinese")) {
+        return false;
+    }
+
     return true;
 }
