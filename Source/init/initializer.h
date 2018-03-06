@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <map>
 
 class Initializer {
 public:
@@ -9,5 +10,5 @@ public:
     static bool checkMemory();
     static bool checkCPU();
     static bool loadResCache(const std::string zipFile, ResCache* resCache);
-    static bool loadString(const std::string language);
+    static bool loadString(const std::string language, std::map<std::string, std::string> textString);
 };

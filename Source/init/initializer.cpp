@@ -29,6 +29,6 @@ bool Initializer::loadResCache(const std::string zipFile, ResCache* resCache) {
 }
 
 // 加载文本
-bool Initializer::loadString(const std::string language) {
+bool Initializer::loadString(const std::string language, std::map<std::string, std::string> textString) {
     return true;
 }
