@@ -2,11 +2,12 @@
 #include "initializer.h"
 #include "luamanager.h"
 #include "eventmanager.h"
+#include "flyacross.h"
 
 Game* Game::game = nullptr;
 Game* Game::getGame() {
     if (game == nullptr) {
-        game = new Game();
+        game = new FlyAcross();
     }
     return game;
 }
@@ -53,7 +54,7 @@ bool Game::init() {
         return false;
     }
 
-    if (!createWindow()) {
+    if (!createWindow(vGetGameTitle())) {
         return false;
     }
 

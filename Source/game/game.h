@@ -22,6 +22,9 @@ public:
     void setOption(GameOption gameOption);
     bool init();
     bool createWindow();
+    virtual std::string vGetGameTitle()=0;
+    virtual std::string vGetGameDirectory()=0;
+
     
     EventManager* m_pEventManager;
 
