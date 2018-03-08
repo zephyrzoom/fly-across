@@ -7,3 +7,12 @@ std::string FlyAcross::vGetGameTitle() {
 std::string FlyAcross::vGetGameDirectory() {
     return "";
 }
+
+FlyAcross* FlyAcross::flyAcross = nullptr;
+
+FlyAcross* FlyAcross::getFlyAcross() {
+    if (flyAcross == nullptr) {
+        flyAcross = new FlyAcross();
+    }
+    return flyAcross;
+}

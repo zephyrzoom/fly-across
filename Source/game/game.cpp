@@ -2,18 +2,9 @@
 #include "initializer.h"
 #include "luamanager.h"
 #include "eventmanager.h"
-#include "flyacross.h"
 
-Game* Game::game = nullptr;
-Game* Game::getGame() {
-    if (game == nullptr) {
-        game = new FlyAcross();
-    }
-    return game;
-}
-
-void Game::setOption(GameOption gameOption) {
-    m_gameOption = gameOption;
+void Game::setOption(GameOption* gameOption) {
+    m_pGameOption = gameOption;
 }
 
 bool Game::init() {
@@ -61,6 +52,6 @@ bool Game::init() {
     return true;
 }
 
-bool Game::createWindow() {
+bool Game::createWindow(std::string gameTitle) {
     return true;
 }

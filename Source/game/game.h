@@ -11,23 +11,20 @@ class Game
 {
 
 private:
-    static Game* game;
-    GameOption m_gameOption;
+    GameOption* m_pGameOption;
     ResCache* m_pResCache;
     std::map<std::string, std::string> m_textString;
     
 
 public:
-    static Game* getGame();
-    void setOption(GameOption gameOption);
+    void setOption(GameOption* gameOption);
     bool init();
-    bool createWindow();
+    bool createWindow(std::string gameTitle);
     virtual std::string vGetGameTitle()=0;
     virtual std::string vGetGameDirectory()=0;
 
     
     EventManager* m_pEventManager;
+    GameLogicAndView* m_pGameView;
 
-protected:
-    Game();
 };
