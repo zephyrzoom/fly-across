@@ -32,3 +32,7 @@ bool Initializer::loadResCache(const std::string zipFile, ResCache* resCache) {
 bool Initializer::loadString(const std::string language, std::map<std::string, std::string> textString) {
     return true;
 }
+
+std::string Initializer::getSaveDirectory() {
+    return "";
+}

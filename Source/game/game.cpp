@@ -49,6 +49,18 @@ bool Game::init() {
         return false;
     }
 
+    m_pGameLogic = vGetGameLogic();
+    if (!m_pGameLogic) {
+        return false;
+    }
+
+    m_saveDirectory = Initializer::getSaveDirectory();
+    if (m_saveDirectory.empty()) {
+        return false;
+    }
+
+    m_pResCache->preload("*.ogg");
+
     return true;
 }
 
