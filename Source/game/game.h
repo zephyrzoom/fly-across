@@ -1,8 +1,8 @@
 #pragma once
 
-#include "gameoption.h"
-#include "rescache.h"
-#include "eventmanager.h"
+#include "../init/gameoption.h"
+#include "../init/rescache.h"
+#include "../init/eventmanager.h"
 #include "gamelogic.h"
 
 #include <string>
