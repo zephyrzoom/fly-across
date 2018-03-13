@@ -67,3 +67,8 @@ bool Game::init() {
 bool Game::createWindow(std::string gameTitle) {
     return true;
 }
+
+int Game::exitGame() {
+    // 正常退出
+    return 0;
+}

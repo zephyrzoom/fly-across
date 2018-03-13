@@ -13,9 +13,9 @@ int main()
         return false;
     }
 
-    MainLoop();
-    Shutdown();
-    Logger::Destroy();
+    //MainLoop();
+    //Shutdown();
+    Logger::destroy();
 
-    return FlyAcross::getFlyAcross()->GetExitCode();
+    return FlyAcross::getFlyAcross()->exitGame();
 }

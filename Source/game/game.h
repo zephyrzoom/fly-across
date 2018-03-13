@@ -24,6 +24,7 @@ public:
     virtual std::string vGetGameTitle()=0;
     virtual std::string vGetGameDirectory()=0;
     virtual GameLogic* vGetGameLogic()=0;
+    int exitGame();
 
     
     EventManager* m_pEventManager;
