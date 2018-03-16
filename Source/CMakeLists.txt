@@ -1,1 +1,3 @@
-add_executable(flyacross flyacross/main.cpp)
+add_subdirectory(flyacross)
+add_subdirectory(game)
+add_subdirectory(init)

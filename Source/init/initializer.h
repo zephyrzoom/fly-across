@@ -3,6 +3,8 @@
 #include <string>
 #include <map>
 
+#include "rescache.h"
+
 class Initializer {
 public:
     static bool isOnlyInstance();
