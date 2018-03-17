@@ -1,5 +1,5 @@
-add_executable(fly-across main.cpp)
-add_library(flyacross flyacross.cpp)
+add_library(flyacross flyacross.cpp ../game/game.cpp ../game/gamelogic.cpp ../init/eventmanager.cpp ../init/gameoption.cpp ../init/initializer.cpp ../init/logger.cpp ../init/luamanager.cpp ../init/vector2d.cpp ../init/rescache.cpp)
 
-include_directories("${PROJECT_SOURCE_DIR}/flyacross")
-target_link_libraries(fly-across ${EXTRA_LIBS})
+add_executable(fly-across main.cpp)
+target_link_libraries(fly-across flyacross)
+
