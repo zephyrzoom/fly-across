@@ -1,6 +1,0 @@
-add_library(eventmanager eventmanager.cpp)
-add_library(gameoption gameoption.cpp)
-add_library(initializer initializer.cpp)
-add_library(logger logger.cpp)
-add_library(luamanager luamanager.cpp)
-add_library(vector2d vector2d.cpp)
