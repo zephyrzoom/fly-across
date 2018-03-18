@@ -1,4 +1,8 @@
 #pragma once
+
+/**
+ * 二维向量类
+ */
 class Vector2D {
 private:
     int m_x;
