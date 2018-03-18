@@ -2,6 +2,9 @@
 #include "../init/gameoption.h"
 #include "flyacross.h"
 
+/**
+ * 程序入口
+ */
 int main()
 {
     Logger::init("logging.json");
