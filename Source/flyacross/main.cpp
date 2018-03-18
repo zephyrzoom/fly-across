@@ -1,5 +1,5 @@
-#include "../init/logger.h"
-#include "../init/gameoption.h"
+#include "../debugging/logger.h"
+#include "../game/gameoption.h"
 #include "flyacross.h"
 
 /**

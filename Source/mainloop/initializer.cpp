@@ -1,5 +1,5 @@
 #include "initializer.h"
-#include "rescache.h"
+#include "../rescache/rescache.h"
 
 #include <string>
 

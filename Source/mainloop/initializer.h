@@ -3,7 +3,7 @@
 #include <string>
 #include <map>
 
-#include "rescache.h"
+#include "../rescache/rescache.h"
 
 class Initializer {
 public:

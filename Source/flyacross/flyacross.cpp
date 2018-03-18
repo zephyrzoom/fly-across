@@ -1,5 +1,5 @@
 #include "flyacross.h"
-#include "../game/gamelogic.h"
+#include "../gamelogic/gamelogic.h"
 
 FlyAcross* FlyAcross::flyAcross = nullptr;
 

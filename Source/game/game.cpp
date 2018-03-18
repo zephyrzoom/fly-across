@@ -1,7 +1,7 @@
 #include "game.h"
-#include "../init/initializer.h"
-#include "../init/luamanager.h"
-#include "../init/eventmanager.h"
+#include "../mainloop/initializer.h"
+#include "../luamanager/luamanager.h"
+#include "../eventmanager/eventmanager.h"
 
 void Game::setOption(GameOption* gameOption) {
     m_pGameOption = gameOption;

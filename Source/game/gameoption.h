@@ -1,6 +1,6 @@
 #pragma once
 
-#include "vector2d.h"
+#include "../utils/vector2d.h"
 #include <string>
 
 class GameOption {
