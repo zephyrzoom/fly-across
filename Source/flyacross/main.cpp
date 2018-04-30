@@ -13,7 +13,7 @@ int main()
 
     if (!FlyAcross::getFlyAcross()->init())
     {
-        return false;
+        return 1;
     }
 
     //MainLoop();
