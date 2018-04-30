@@ -14,4 +14,3 @@ add_library(flyacross flyacross/flyacross.cpp game/game.cpp gamelogic/gamelogic.
 
 add_executable(fly-across flyacross/main.cpp)
 target_link_libraries(fly-across flyacross)
-
