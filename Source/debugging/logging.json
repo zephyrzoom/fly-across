@@ -1,9 +1,7 @@
 {
+    "format":"[t:)|l:)]: m:)",
     "file": {
-        "path":"game.log",
-        "format":"[t:)|l:)]: m:)"
+        "path":"game.log"
     },
-    "console": {
-        "format":"[t:)|l:)]: m:)"
-    }
+    "console": true
 }
